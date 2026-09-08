@@ -1,0 +1,131 @@
+:root {
+  --cor-principal: #38bdf8; 
+  --cor-principal-escura: #0ea5e9; 
+  --cor-texto: #334155; 
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--cor-texto);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* TÍTULOS E DESTAQUES */
+.text-color-main {
+  color: var(--cor-principal);
+}
+.section-title {
+  color: var(--cor-principal-escura);
+  font-weight: 700;
+}
+
+/* BOTÕES */
+.cta-btn {
+  border: 2px solid var(--cor-principal);
+  color: var(--cor-principal);
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  background-color: var(--cor-principal);
+  color: #ffffff;
+  border-color: var(--cor-principal);
+}
+
+.cta-btn--hero, .cta-btn--resume {
+  background-color: var(--cor-principal);
+  color: #ffffff;
+  border: 2px solid var(--cor-principal);
+}
+.cta-btn--hero:hover, .cta-btn--resume:hover {
+  background-color: var(--cor-principal-escura);
+  border-color: var(--cor-principal-escura);
+}
+
+/* HERO E FOOTER COM AZUL */
+#hero {
+  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+  color: #ffffff;
+}
+#hero .text-color-main {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #0ea5e9;
+  color: #ffffff;
+}
+.footer a {
+  color: #ffffff;
+}
+.footer a:hover {
+  color: #e0f2fe;
+}
+
+/* DETALHES */
+.about-wrapper__info-text strong {
+  color: var(--cor-principal-escura);
+}
+/* ORGANIZAÇÃO DO LAYOUT */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.section-title {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.about-wrapper__image {
+  flex: 1;
+  min-width: 300px;
+}
+.about-wrapper__image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.about-wrapper__info {
+  flex: 1.5;
+  min-width: 300px;
+}
+.project-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+.project-wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.project-wrapper__text, .project-wrapper__image {
+  flex: 1;
+  min-width: 300px;
+}
+/* Deixar contatos visíveis no fundo azul */
+a[href^="mailto"], 
+a[href^="https://wa.me"] {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a[href^="mailto"]:hover, 
+a[href^="https://wa.me"]:hover {
+    color: #1e293b !important;e */
+}
+
+/* Ícone do Facebook no rodapé */
+footer .fab.fa-facebook {
+    color: white !important;
+    font-size: 24px;
+}
